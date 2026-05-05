@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,6 +8,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company */}
           <div>
+            <Image
+              src="/images/gca-logo.png"
+              alt="Gulf Coast Alloys"
+              width={56}
+              height={56}
+              className="mb-3"
+            />
             <h3 className="text-lg font-bold mb-3">Gulf Coast Alloys, LLC</h3>
             <p className="text-sm text-gray-300 leading-relaxed">
               Supplying high-quality metals and alloys for oil &amp; gas,
