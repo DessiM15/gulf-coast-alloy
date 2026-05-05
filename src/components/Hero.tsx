@@ -1,12 +1,25 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-navy text-white">
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark to-navy opacity-90" />
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
+    <section className="relative min-h-[600px] sm:min-h-[700px] flex items-center">
+      {/* Background image */}
+      <Image
+        src="/images/hero-bg.jpg"
+        alt="Oil refinery industrial facility"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-navy-dark/70" />
+
+      {/* Content */}
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 sm:py-40 lg:py-48 w-full">
         <div className="max-w-2xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white">
             Gulf Coast Alloys
             <span className="block text-steel-light mt-2 text-2xl sm:text-3xl lg:text-4xl font-medium">
               Strength in Every Alloy
