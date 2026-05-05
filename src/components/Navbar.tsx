@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/gca-logo.jpg"
+              src="/images/gca-logo.png"
               alt="Gulf Coast Alloys"
               width={48}
               height={48}
